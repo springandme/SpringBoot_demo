@@ -29,4 +29,9 @@ public class SpringbootJpaApplicationTests {
 //        User{id=2, username='lisi', password='123', name='李四'}
     }
 
+    @Test
+    public void testFindALl() {
+        List<User> list = userDao.findAll();
+        list.forEach(System.out::println);
+    }
 }

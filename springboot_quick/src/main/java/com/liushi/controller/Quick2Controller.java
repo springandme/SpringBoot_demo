@@ -1,9 +1,12 @@
 package com.liushi.controller;
 
+import com.liushi.domain.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 /**
  * @ClassName Quick2Controller
@@ -12,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Date 2020/6/12 10:33
  * @Version V1.0
  **/
-@Controller
+// @Controller
 public class Quick2Controller {
 
     @Value("${name}")
@@ -21,10 +24,14 @@ public class Quick2Controller {
     @Value("${person.addr}")
     private String addr;
 
+    @Autowired
+    private List<Student> list;
+
+
     @RequestMapping("/myQuick")
     @ResponseBody
     public String quick() {
         //获得yml配置文件信息
-        return "name:" + name + addr;
+        return "name: |  " + " |  " + name + " |  " + addr + " |  " + list + " |  ";
     }
 }
