@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <!--
+        定义一个格式,命名为"LOG_PATTERN",该格式中%data表示日期,%thread表示线程名,
+        %-5level表示级别从左显示5个字符宽度,%Logger{36}表示Logger名字最长36个字符
+        %msg表示日志信息,%n是换行符
+    -->
+    <!--<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
+    <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level%logger{36} -%msg%n"/>
+    <!--
+        再定义一个名为"FILE_PATH"文件路径,日志都会存储到该路径下,%i表示第一i个we你按
+        当日志文件达到指定大小时,会将日志生成到新的文件里,这里的i就是文件索引
+        这里要注意的是,不管是Windows还是Linux系统,日志存储的路径必须是绝对路径
+    -->
+    <property name="FILE_PATH"
+              value="D:/Code/SpringBoot/springboot_quick/src/main/resources/log/demo.%d{yyyy-MMdd}.%i.log"/>
+    <!-- 定义控制台输出
+        使用<appender>节点设置控制台输出的(class="ch.qos.logback.core.ConsoleAppender")的配置,定义为"CONSOLE"
+        使用上面定义好的输出格式(LOG_PATTERN)来输出, 使用${}引用进来即可
+    -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--按照上面配合的LOG_PATTERN来打印日志-->
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!--
+        定义日志文件的相关参数
+        使用<appender>定义一个名为"FILE"的文件配置,主要是配置日志文件保存的时间,单个日志文件存储代销,以及日志保存的路径和日志的输出格式
+    -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--按照上面配置的FILE_PATH路径保存日志    -->
+            <fileNamePattern>${FILE_PATH}</fileNamePattern>
+            <!--  日志保存15天  -->
+            <maxHistory>15</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 单个日志文件的最大,超过则新建日志文件存储-->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+        <encoder>
+            <!--  按照上面的配置LOG_PATTERN来打印日志  -->
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 定义日志输出级别-->
+    <logger name="com.liushi.service" level="INFO"/>
+
+    <!-- 针对INFO级别的日志,使用<root>引用上面定义好的控制台日志输出和日志文件的参数-->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
+
