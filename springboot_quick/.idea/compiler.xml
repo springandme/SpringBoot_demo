@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot_vue" />
         <module name="springboot_mybatis" />
+        <module name="course03" />
         <module name="springboot_quick2" />
         <module name="vue_demo" />
         <module name="springboot_jpa" />
@@ -20,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="course03" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="springboot_jpa" options="-parameters" />
       <module name="springboot_mybatis" options="-parameters" />

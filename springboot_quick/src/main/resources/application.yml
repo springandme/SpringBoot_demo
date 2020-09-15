@@ -36,4 +36,29 @@ map:
   key1: value1
   key2: value2
 
+  #日志配置
+  #logging.config是来指定项目启动时候,读取哪个配置文件,这里指定的配置文件是根路径下的logback.xml
+  #logging.level是用来指定具体的mapper中日志的输出等级,上面的配置表示com.liushi.dao包下的所有mapper日志输出别为trace
+  #会将操作数据库的SQL打印出来,开发时设置成trace方便定位问题,在生产环境上,这个日志级别再设置成error级别即可
+  #常用的日志级别按照从高到低[DESC降序]:ERROR,WARN,INFO,DEBUG
+logging:
+  level:
+    com.liushi.dao: trace
+
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/xc_course?characterEncoding=utf-8
+      username: root
+      password: root
+      driverClassName: com.mysql.jdbc.Driver
+      initialSize: 5  #初始建立连接数量
+      minIdle: 5  #最小连接数量
+      maxActive: 20 #最大连接数量
+      maxWait: 10000  #获取连接最大等待时间，毫秒
+      testOnBorrow: true #申请连接时检测连接是否有效
+      testOnReturn: false #归还连接时检测连接是否有效
+      timeBetweenEvictionRunsMillis: 60000 #配置间隔检测连接是否有效的时间（单位是毫秒）
+      minEvictableIdleTimeMillis: 300000  #连接在连接池的最小生存时间（毫秒）
+
 
