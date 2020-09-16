@@ -9,6 +9,21 @@ package com.liushi.domain;
  **/
 // @Component
 // @ConfigurationProperties(prefix = "student")
+// 注意:使用@ConfigurationProperties注解需要导入它的依赖spring-boot-configuration-processor
+/*
+    @ConfigurationProperties注解并且使用prefix来指定一个前缀
+    该类中的属性就是配置中去掉前缀的名字,
+    即:前缀名+属性名就是配置文件中定义的key,同时,该类上面需要加上@Component注解,把该类作为组件放到Spring容器中,
+    yml配置中如下
+#配置数据,集合(对象数据)
+student:
+  - name: tom
+    age:  19
+    addr: beijing
+  - name: lucky
+    age:  18
+    addr: tianjin
+ */
 public class Student {
     private String name;
     private Integer age;

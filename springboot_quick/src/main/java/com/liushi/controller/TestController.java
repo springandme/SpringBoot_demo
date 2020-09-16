@@ -6,6 +6,7 @@ import com.liushi.response.JsonResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,6 +26,15 @@ public class TestController {
 
     @Autowired
     private CourseBaseRepository courseBaseRepository;
+
+    @Value("${url.orderUrl}")
+    private String orderUrl;
+
+    @RequestMapping("/config")
+    public JsonResult testConfig() {
+        LOGGER.info("========获取的订单服务地址为: {}", orderUrl);
+        return new JsonResult();
+    }
 
     @RequestMapping("/log")
     public JsonResult testLog() {

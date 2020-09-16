@@ -1,0 +1,238 @@
+20:18:09.103 [restartedMain] INFO com.liushi.MySpringBootApplication -Starting MySpringBootApplication on DESKTOP-2N9UU7E with PID 16900 (D:\Code\SpringBoot\springboot_quick\target\classes started by 1111 in D:\Code\SpringBoot\springboot_quick)
+20:18:09.109 [restartedMain] INFO com.liushi.MySpringBootApplication -No active profile set, falling back to default profiles: default
+20:18:09.161 [restartedMain] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d99ca77: startup date [Tue Sep 15 20:18:09 CST 2020]; root of context hierarchy
+20:18:10.302 [restartedMain] INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aa315ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:18:10.606 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+20:18:10.619 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+20:18:10.626 [restartedMain] INFO o.a.catalina.core.StandardService -Starting service [Tomcat]
+20:18:10.626 [restartedMain] INFO o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.29
+20:18:10.629 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+20:18:10.629 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20:18:10.629 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:18:11.698 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+20:18:11.803 [localhost-startStop-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+20:18:11.803 [localhost-startStop-1] INFO o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2642 ms
+20:18:11.935 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+20:18:11.936 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet statViewServlet mapped to [/druid/*]
+20:18:11.938 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+20:18:11.938 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:18:11.938 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:18:11.938 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+20:18:11.938 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+20:18:11.961 [restartedMain] INFO c.a.d.s.b.a.DruidDataSourceAutoConfigure -Init DruidDataSource
+20:18:12.243 [restartedMain] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+20:18:12.327 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+20:18:12.337 [restartedMain] INFO o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:18:12.387 [restartedMain] INFO org.hibernate.Version -HHH000412: Hibernate Core {5.2.16.Final}
+20:18:12.399 [restartedMain] INFO org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+20:18:12.429 [restartedMain] INFO o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20:18:12.515 [restartedMain] INFO org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:18:12.621 [restartedMain] WARN org.hibernate.id.UUIDHexGenerator -HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+20:18:12.810 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:18:13.120 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:13.227 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d99ca77: startup date [Tue Sep 15 20:18:09 CST 2020]; root of context hierarchy
+20:18:13.247 [restartedMain] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:18:13.270 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/map]}" onto public com.liushi.response.JsonResult<java.util.Map> com.liushi.controller.JsonController.getMapStu()
+20:18:13.271 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/stu]}" onto public com.liushi.response.JsonResult<com.liushi.domain.Student> com.liushi.controller.JsonController.getStu()
+20:18:13.271 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.JsonController.getListStu()
+20:18:13.271 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick3]}" onto public java.lang.String com.liushi.controller.Quick3Controller.quick()
+20:18:13.271 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick]}" onto public java.lang.String com.liushi.controller.QuickController.quick()
+20:18:13.272 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/find/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.TestController.findAll()
+20:18:13.272 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/log]}" onto public com.liushi.response.JsonResult com.liushi.controller.TestController.testLog()
+20:18:13.275 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:18:13.275 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:18:13.294 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:13.294 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:13.478 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+20:18:13.503 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+20:18:13.504 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+20:18:13.504 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+20:18:13.508 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+20:18:13.509 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+20:18:13.517 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+20:18:13.524 [restartedMain] INFO o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+20:18:13.534 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+20:18:13.537 [restartedMain] INFO com.liushi.MySpringBootApplication -Started MySpringBootApplication in 4.81 seconds (JVM running for 6.127)
+20:18:45.112 [Thread-15] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d99ca77: startup date [Tue Sep 15 20:18:09 CST 2020]; root of context hierarchy
+20:18:45.115 [Thread-15] INFO o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+20:18:45.116 [Thread-15] INFO o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+20:18:45.118 [Thread-15] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+20:18:45.123 [Thread-15] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+20:18:46.047 [restartedMain] INFO com.liushi.MySpringBootApplication -Starting MySpringBootApplication on DESKTOP-2N9UU7E with PID 16900 (D:\Code\SpringBoot\springboot_quick\target\classes started by 1111 in D:\Code\SpringBoot\springboot_quick)
+20:18:46.047 [restartedMain] INFO com.liushi.MySpringBootApplication -No active profile set, falling back to default profiles: default
+20:18:46.049 [restartedMain] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2837dcbc: startup date [Tue Sep 15 20:18:46 CST 2020]; root of context hierarchy
+20:18:46.425 [restartedMain] INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aa315ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:18:46.494 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+20:18:46.495 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+20:18:46.495 [restartedMain] INFO o.a.catalina.core.StandardService -Starting service [Tomcat]
+20:18:46.495 [restartedMain] INFO o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.29
+20:18:46.496 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+20:18:46.497 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20:18:46.497 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:18:46.497 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+20:18:46.534 [localhost-startStop-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+20:18:46.534 [localhost-startStop-1] INFO o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 485 ms
+20:18:46.567 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+20:18:46.568 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet statViewServlet mapped to [/druid/*]
+20:18:46.568 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+20:18:46.568 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:18:46.569 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:18:46.569 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+20:18:46.569 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+20:18:46.575 [restartedMain] INFO c.a.d.s.b.a.DruidDataSourceAutoConfigure -Init DruidDataSource
+20:18:46.644 [restartedMain] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-2} inited
+20:18:46.677 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+20:18:46.677 [restartedMain] INFO o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:18:46.688 [restartedMain] INFO org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:18:46.713 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:18:46.795 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:46.843 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2837dcbc: startup date [Tue Sep 15 20:18:46 CST 2020]; root of context hierarchy
+20:18:46.853 [restartedMain] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:18:46.859 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/map]}" onto public com.liushi.response.JsonResult<java.util.Map> com.liushi.controller.JsonController.getMapStu()
+20:18:46.859 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/stu]}" onto public com.liushi.response.JsonResult<com.liushi.domain.Student> com.liushi.controller.JsonController.getStu()
+20:18:46.859 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.JsonController.getListStu()
+20:18:46.860 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick3]}" onto public java.lang.String com.liushi.controller.Quick3Controller.quick()
+20:18:46.860 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick]}" onto public java.lang.String com.liushi.controller.QuickController.quick()
+20:18:46.862 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/find/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.TestController.findAll()
+20:18:46.862 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/log]}" onto public com.liushi.response.JsonResult com.liushi.controller.TestController.testLog()
+20:18:46.864 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:18:46.865 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:18:46.876 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:46.876 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:46.951 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+20:18:46.989 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+20:18:46.991 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+20:18:46.991 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+20:18:46.996 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+20:18:46.997 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+20:18:47.002 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+20:18:47.004 [restartedMain] INFO o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+20:18:47.009 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+20:18:47.010 [restartedMain] INFO com.liushi.MySpringBootApplication -Started MySpringBootApplication in 1.005 seconds (JVM running for 39.6)
+20:18:47.013 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+20:18:56.409 [Thread-23] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2837dcbc: startup date [Tue Sep 15 20:18:46 CST 2020]; root of context hierarchy
+20:18:56.411 [Thread-23] INFO o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+20:18:56.412 [Thread-23] INFO o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+20:18:56.412 [Thread-23] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+20:18:56.416 [Thread-23] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-2} closed
+20:18:57.254 [restartedMain] INFO com.liushi.MySpringBootApplication -Starting MySpringBootApplication on DESKTOP-2N9UU7E with PID 16900 (D:\Code\SpringBoot\springboot_quick\target\classes started by 1111 in D:\Code\SpringBoot\springboot_quick)
+20:18:57.255 [restartedMain] INFO com.liushi.MySpringBootApplication -No active profile set, falling back to default profiles: default
+20:18:57.257 [restartedMain] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@618caa40: startup date [Tue Sep 15 20:18:57 CST 2020]; root of context hierarchy
+20:18:57.638 [restartedMain] INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aa315ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:18:57.703 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+20:18:57.704 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+20:18:57.704 [restartedMain] INFO o.a.catalina.core.StandardService -Starting service [Tomcat]
+20:18:57.704 [restartedMain] INFO o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.29
+20:18:57.705 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+20:18:57.706 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20:18:57.706 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:18:57.706 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+20:18:57.730 [localhost-startStop-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+20:18:57.730 [localhost-startStop-1] INFO o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 473 ms
+20:18:57.756 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+20:18:57.757 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet statViewServlet mapped to [/druid/*]
+20:18:57.757 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+20:18:57.757 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:18:57.757 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:18:57.757 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+20:18:57.757 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+20:18:57.763 [restartedMain] INFO c.a.d.s.b.a.DruidDataSourceAutoConfigure -Init DruidDataSource
+20:18:57.832 [restartedMain] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-3} inited
+20:18:57.864 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+20:18:57.864 [restartedMain] INFO o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:18:57.876 [restartedMain] INFO org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:18:57.901 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:18:57.995 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:58.044 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@618caa40: startup date [Tue Sep 15 20:18:57 CST 2020]; root of context hierarchy
+20:18:58.049 [restartedMain] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:18:58.055 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/map]}" onto public com.liushi.response.JsonResult<java.util.Map> com.liushi.controller.JsonController.getMapStu()
+20:18:58.056 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/stu]}" onto public com.liushi.response.JsonResult<com.liushi.domain.Student> com.liushi.controller.JsonController.getStu()
+20:18:58.056 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.JsonController.getListStu()
+20:18:58.056 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick3]}" onto public java.lang.String com.liushi.controller.Quick3Controller.quick()
+20:18:58.057 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick]}" onto public java.lang.String com.liushi.controller.QuickController.quick()
+20:18:58.057 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/find/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.TestController.findAll()
+20:18:58.058 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/log]}" onto public com.liushi.response.JsonResult com.liushi.controller.TestController.testLog()
+20:18:58.059 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:18:58.059 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:18:58.069 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:58.069 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:58.139 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+20:18:58.170 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+20:18:58.171 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+20:18:58.171 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+20:18:58.175 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+20:18:58.176 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+20:18:58.180 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+20:18:58.181 [restartedMain] INFO o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+20:18:58.184 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+20:18:58.185 [restartedMain] INFO com.liushi.MySpringBootApplication -Started MySpringBootApplication in 0.968 seconds (JVM running for 50.776)
+20:18:58.187 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
+20:19:08.380 [http-nio-8080-exec-2] INFO o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+20:19:08.380 [http-nio-8080-exec-2] INFO o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+20:19:08.396 [http-nio-8080-exec-2] INFO o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+20:19:08.446 [http-nio-8080-exec-2] INFO o.h.h.i.QueryTranslatorFactoryInitiator -HHH000397: Using ASTQueryTranslatorFactory
+20:19:12.621 [Thread-29] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@618caa40: startup date [Tue Sep 15 20:18:57 CST 2020]; root of context hierarchy
+20:19:12.622 [Thread-29] INFO o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+20:19:12.622 [Thread-29] INFO o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+20:19:12.623 [Thread-29] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+20:19:12.626 [Thread-29] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-3} closed
+20:19:13.545 [restartedMain] INFO com.liushi.MySpringBootApplication -Starting MySpringBootApplication on DESKTOP-2N9UU7E with PID 16900 (D:\Code\SpringBoot\springboot_quick\target\classes started by 1111 in D:\Code\SpringBoot\springboot_quick)
+20:19:13.545 [restartedMain] INFO com.liushi.MySpringBootApplication -No active profile set, falling back to default profiles: default
+20:19:13.547 [restartedMain] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b7bce9a: startup date [Tue Sep 15 20:19:13 CST 2020]; root of context hierarchy
+20:19:13.931 [restartedMain] INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aa315ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:19:13.988 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+20:19:13.989 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+20:19:13.990 [restartedMain] INFO o.a.catalina.core.StandardService -Starting service [Tomcat]
+20:19:13.990 [restartedMain] INFO o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.29
+20:19:13.991 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+20:19:13.992 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20:19:13.992 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:19:13.992 [localhost-startStop-1] INFO o.a.c.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+20:19:14.012 [localhost-startStop-1] INFO o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+20:19:14.012 [localhost-startStop-1] INFO o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 465 ms
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.ServletRegistrationBean -Servlet statViewServlet mapped to [/druid/*]
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+20:19:14.034 [localhost-startStop-1] INFO o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+20:19:14.039 [restartedMain] INFO c.a.d.s.b.a.DruidDataSourceAutoConfigure -Init DruidDataSource
+20:19:14.087 [restartedMain] INFO c.alibaba.druid.pool.DruidDataSource -{dataSource-4} inited
+20:19:14.111 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+20:19:14.111 [restartedMain] INFO o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:19:14.119 [restartedMain] INFO org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:19:14.139 [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:19:14.197 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:19:14.227 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b7bce9a: startup date [Tue Sep 15 20:19:13 CST 2020]; root of context hierarchy
+20:19:14.231 [restartedMain] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:19:14.234 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/map]}" onto public com.liushi.response.JsonResult<java.util.Map> com.liushi.controller.JsonController.getMapStu()
+20:19:14.234 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/stu]}" onto public com.liushi.response.JsonResult<com.liushi.domain.Student> com.liushi.controller.JsonController.getStu()
+20:19:14.234 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.JsonController.getListStu()
+20:19:14.234 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick3]}" onto public java.lang.String com.liushi.controller.Quick3Controller.quick()
+20:19:14.234 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/quick]}" onto public java.lang.String com.liushi.controller.QuickController.quick()
+20:19:14.235 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/find/list]}" onto public com.liushi.response.JsonResult<java.util.List> com.liushi.controller.TestController.findAll()
+20:19:14.235 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test/log]}" onto public com.liushi.response.JsonResult com.liushi.controller.TestController.testLog()
+20:19:14.236 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:19:14.236 [restartedMain] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:19:14.242 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:19:14.242 [restartedMain] INFO o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:19:14.282 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer -LiveReload server is running on port 35729
+20:19:14.298 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+20:19:14.299 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+20:19:14.299 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+20:19:14.300 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+20:19:14.301 [restartedMain] INFO o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+20:19:14.304 [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+20:19:14.305 [restartedMain] INFO o.a.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+20:19:14.308 [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path ''
+20:19:14.308 [restartedMain] INFO com.liushi.MySpringBootApplication -Started MySpringBootApplication in 0.796 seconds (JVM running for 66.899)
+20:19:14.310 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener -Condition evaluation unchanged
